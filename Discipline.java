@@ -1,22 +1,22 @@
-public class Discipline{
-    private String codigo;
-    private String nome;
+public class Discipline {
+    private String code;
+    private String name;
 
-    public Discipline(String codigo, String nome) {
-        this.codigo = codigo;
-        this.nome = nome;
+    public Discipline(String code, String name) {
+        this.code = code;
+        this.name = name;
     }
 
-    public String getCodigo() {
-        return codigo;
+    public String getCode() {
+        return code;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
     
     @Override
     public String toString() {
-        return codigo + " - " + nome;
+        return code + " - " + name;
     }
 }
