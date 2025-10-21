@@ -1,3 +1,6 @@
+import Student.Student;
+import Student.StudentList;
+
 public class App {
   public static void main (String[] args) {
     StudentList students = new StudentList();
