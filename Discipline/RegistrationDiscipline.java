@@ -14,7 +14,7 @@ public class RegistrationDiscipline {
         return duplicateDiscipline;
     }
 
-    public boolean adicionarDiscipline (Discipline d) { 
+    public boolean addDiscipline (Discipline d) { 
     
         if (!Discipline.add(d)) {
             duplicateDiscipline.add(d);
