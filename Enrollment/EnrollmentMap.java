@@ -55,8 +55,4 @@ public class EnrollmentMap {
             .limit(n)
             .collect(Collectors.toList());
     }
-
-    public void sout () {
-        System.out.println(enrollmentListMap);
-    }
 }
