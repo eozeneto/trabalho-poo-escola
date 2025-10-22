@@ -38,4 +38,9 @@ public class StudentList {
     final List<Student> studentsOrderedByName = students;
     return studentsOrderedByName;
   }
+
+  public List<Student> getAllStudents() {
+    return this.students;
+}
+
 }
