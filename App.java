@@ -1,9 +1,6 @@
 import java.util.List;
 import java.util.stream.Collectors;
-import Student.Student;
-import Student.StudentList;
-import Discipline.Discipline;
-import Discipline.RegistrationDiscipline;
+
 public class App {
 
     public static void main(String[] args) {
@@ -33,10 +30,10 @@ public class App {
         System.out.println();
 
         System.out.println("== Duplicatas detectadas na importação ==");
-        if (disciplineRegistry.getDuplicateDiscipline().isEmpty()) {
+        if (disciplineRegistry.getDuplicateDisciplines().isEmpty()) {
             System.out.println("(nenhuma)");
         } else {
-            disciplineRegistry.getDuplicateDiscipline().forEach(System.out::println);
+            disciplineRegistry.getDuplicateDisciplines().forEach(System.out::println);
         }
         System.out.println();
     }
@@ -57,4 +54,3 @@ public class App {
         disciplineRegistry.addDiscipline(new Discipline("PRG201", "Programação II"));
     }
 }
-
